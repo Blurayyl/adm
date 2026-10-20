@@ -1,0 +1,1013 @@
+
+/* =========================================
+   1. CONFIGURAÇÕES GERAIS
+========================================= */
+
+:root {
+    --azul-escuro: #142b4a;
+    --azul: #2457a7;
+    --azul-claro: #eaf1fc;
+    --branco: #ffffff;
+    --cinza-fundo: #f4f6fa;
+    --cinza-borda: #e1e6ef;
+    --cinza-texto: #687386;
+    --texto-principal: #263449;
+    --verde: #21845a;
+    --laranja: #c77b21;
+    --roxo: #7655b5;
+    --sombra: 0 5px 20px rgba(25, 43, 70, 0.06);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 24px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cinza-fundo);
+    color: var(--texto-principal);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible {
+    outline: 3px solid #76a8f5;
+    outline-offset: 4px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+p {
+    color: var(--cinza-texto);
+}
+
+
+/* =========================================
+   2. CABEÇALHO
+========================================= */
+
+.cabecalho {
+    min-height: 100px;
+    background-color: var(--branco);
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 23px;
+}
+
+.marca-texto h1 {
+    font-size: 25px;
+    color: var(--azul-escuro);
+    letter-spacing: -0.5px;
+}
+
+.marca-texto p {
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--azul-escuro);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.usuario i {
+    font-size: 28px;
+    color: var(--azul);
+}
+
+
+/* =========================================
+   3. MENU DE NAVEGAÇÃO
+========================================= */
+
+.navegacao {
+    background-color: var(--azul-escuro);
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+}
+
+.link-menu {
+    min-height: 58px;
+    padding: 0 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #d7e0ef;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.link-menu:hover,
+.link-menu.ativo {
+    color: var(--branco);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-bottom-color: #75a8ff;
+}
+
+.link-menu i {
+    font-size: 15px;
+}
+
+
+/* =========================================
+   4. CONTEÚDO PRINCIPAL
+========================================= */
+
+.conteudo {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 36px 40px 60px;
+}
+
+.secao {
+    margin-top: 44px;
+    scroll-margin-top: 24px;
+}
+
+.titulo-secao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.titulo-secao h2 {
+    color: var(--azul-escuro);
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.titulo-secao p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   5. ÁREA DE BOAS-VINDAS
+========================================= */
+
+.boas-vindas {
+    min-height: 280px;
+    padding: 42px 46px;
+    background: linear-gradient(120deg, #142b4a, #2457a7);
+    color: var(--branco);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    overflow: hidden;
+}
+
+.boas-vindas-texto {
+    max-width: 700px;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #e0eaff;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.boas-vindas h2 {
+    max-width: 650px;
+    margin-top: 15px;
+    color: var(--branco);
+    font-size: clamp(25px, 3vw, 36px);
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.boas-vindas p {
+    max-width: 650px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+    color: #e1e9f7;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.boas-vindas-icone {
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.88);
+    background-color: rgba(255, 255, 255, 0.09);
+    font-size: 78px;
+}
+
+.botao {
+    min-height: 42px;
+    padding: 10px 17px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.botao-claro {
+    color: var(--azul-escuro);
+    background-color: var(--branco);
+}
+
+.botao-claro:hover {
+    background-color: #e6edfa;
+}
+
+
+/* =========================================
+   6. CARDS DE ACESSO RÁPIDO
+========================================= */
+
+.grade-atalhos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.card-atalho {
+    min-width: 0;
+    padding: 24px 20px;
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-atalho:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 24px rgba(25, 43, 70, 0.11);
+}
+
+.icone-card {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    font-size: 21px;
+}
+
+.azul {
+    color: var(--azul);
+    background-color: #eaf1fc;
+}
+
+.laranja {
+    color: var(--laranja);
+    background-color: #fff3e2;
+}
+
+.verde {
+    color: var(--verde);
+    background-color: #e5f5ed;
+}
+
+.roxo {
+    color: var(--roxo);
+    background-color: #f0eafe;
+}
+
+.card-atalho h3 {
+    margin-bottom: 8px;
+    color: var(--azul-escuro);
+    font-size: 16px;
+}
+
+.card-atalho p {
+    min-height: 48px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.seta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    color: var(--azul);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   7. COMUNICADOS INTERNOS
+========================================= */
+
+.contador {
+    padding: 7px 12px;
+    background-color: var(--azul-claro);
+    color: var(--azul);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.lista-comunicados {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card-comunicado {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 23px;
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 12px;
+}
+
+.comunicado-icone {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.comunicado-conteudo {
+    flex: 1;
+    min-width: 0;
+}
+
+.linha-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.linha-meta time {
+    color: var(--cinza-texto);
+    font-size: 12px;
+}
+
+.categoria {
+    padding: 3px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.categoria-azul {
+    background-color: #eaf1fc;
+    color: var(--azul);
+}
+
+.categoria-laranja {
+    background-color: #fff3e2;
+    color: #a96715;
+}
+
+.categoria-verde {
+    background-color: #e5f5ed;
+    color: var(--verde);
+}
+
+.comunicado-conteudo h3 {
+    margin-bottom: 7px;
+    color: var(--azul-escuro);
+    font-size: 16px;
+}
+
+.comunicado-conteudo p {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   8. DOCUMENTOS E FORMULÁRIOS
+========================================= */
+
+.grade-documentos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.card-documento {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 12px;
+}
+
+.documento-icone {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--azul-claro);
+    color: var(--azul);
+    font-size: 20px;
+}
+
+.documento-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.documento-info h3 {
+    margin-bottom: 6px;
+    color: var(--azul-escuro);
+    font-size: 14px;
+}
+
+.documento-info p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.botao-outline {
+    flex-shrink: 0;
+    color: var(--azul);
+    background-color: var(--branco);
+    border-color: #cbd8ed;
+}
+
+.botao-outline:hover {
+    color: var(--branco);
+    background-color: var(--azul);
+    border-color: var(--azul);
+}
+
+.aviso-demo {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 16px;
+    background-color: #fff8e9;
+    border: 1px solid #f2e1b9;
+    border-radius: 8px;
+}
+
+.aviso-demo i {
+    margin-top: 4px;
+    color: #9b6b16;
+}
+
+.aviso-demo p {
+    color: #775b24;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   9. AGENDA
+========================================= */
+
+.lista-agenda {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.evento {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 12px;
+}
+
+.data-evento {
+    width: 62px;
+    min-width: 62px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-claro);
+    border-radius: 9px;
+}
+
+.data-evento span {
+    color: var(--azul);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.data-evento strong {
+    color: var(--azul-escuro);
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.detalhes-evento {
+    flex: 1;
+    min-width: 0;
+}
+
+.detalhes-evento h3 {
+    margin-bottom: 8px;
+    color: var(--azul-escuro);
+    font-size: 15px;
+}
+
+.detalhes-evento p {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-right: 18px;
+    margin-bottom: 3px;
+    font-size: 12px;
+}
+
+.detalhes-evento p i {
+    color: var(--azul);
+}
+
+.status {
+    flex-shrink: 0;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.status-azul {
+    color: var(--azul);
+    background-color: var(--azul-claro);
+}
+
+.status-verde {
+    color: var(--verde);
+    background-color: #e5f5ed;
+}
+
+.status-laranja {
+    color: #a96715;
+    background-color: #fff3e2;
+}
+
+
+/* =========================================
+   10. CONTATOS INTERNOS
+========================================= */
+
+.grade-contatos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.card-contato {
+    padding: 28px 18px;
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--sombra);
+}
+
+.avatar {
+    width: 66px;
+    height: 66px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.avatar-azul {
+    color: var(--azul);
+    background-color: #eaf1fc;
+}
+
+.avatar-verde {
+    color: var(--verde);
+    background-color: #e5f5ed;
+}
+
+.avatar-roxo {
+    color: var(--roxo);
+    background-color: #f0eafe;
+}
+
+.card-contato h3 {
+    margin-bottom: 6px;
+    color: var(--azul-escuro);
+    font-size: 16px;
+}
+
+.cargo {
+    min-height: 25px;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.ramal {
+    padding-top: 12px;
+    border-top: 1px solid var(--cinza-borda);
+    font-size: 12px;
+}
+
+.ramal i {
+    margin-right: 6px;
+    color: var(--azul);
+}
+
+
+/* =========================================
+   11. RODAPÉ
+========================================= */
+
+.rodape {
+    padding: 30px 7%;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+}
+
+.rodape-marca {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 18px;
+}
+
+.rodape-marca i {
+    font-size: 20px;
+}
+
+.rodape > p {
+    margin-top: 8px;
+    color: #d4deed;
+    font-size: 13px;
+}
+
+.rodape .rodape-copyright {
+    margin-top: 16px;
+    color: #aebed5;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   12. RESPONSIVIDADE — TABLETS
+========================================= */
+
+@media (max-width: 1000px) {
+    .cabecalho {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .navegacao {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .link-menu {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    .conteudo {
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+
+    .grade-atalhos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .boas-vindas-icone {
+        width: 135px;
+        height: 135px;
+        font-size: 58px;
+    }
+
+    .grade-documentos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   13. RESPONSIVIDADE — CELULARES
+========================================= */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .cabecalho {
+        min-height: auto;
+        padding: 17px 18px;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+
+    .marca {
+        gap: 10px;
+    }
+
+    .marca-texto h1 {
+        font-size: 21px;
+    }
+
+    .marca-texto p {
+        font-size: 11px;
+    }
+
+    .usuario {
+        gap: 0;
+    }
+
+    .usuario span {
+        display: none;
+    }
+
+    .usuario i {
+        font-size: 25px;
+    }
+
+    .navegacao {
+        padding: 0 10px;
+        gap: 2px;
+    }
+
+    .link-menu {
+        min-height: 52px;
+        padding: 0 13px;
+        gap: 7px;
+        font-size: 12px;
+    }
+
+    .link-menu i {
+        font-size: 13px;
+    }
+
+    .conteudo {
+        padding: 22px 16px 40px;
+    }
+
+    .boas-vindas {
+        min-height: auto;
+        padding: 27px 22px;
+        border-radius: 13px;
+    }
+
+    .boas-vindas-icone {
+        display: none;
+    }
+
+    .boas-vindas h2 {
+        font-size: 27px;
+    }
+
+    .boas-vindas p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .secao {
+        margin-top: 32px;
+    }
+
+    .titulo-secao {
+        align-items: flex-start;
+    }
+
+    .titulo-secao h2 {
+        font-size: 20px;
+    }
+
+    .titulo-secao p {
+        font-size: 12px;
+    }
+
+    .grade-atalhos {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .card-atalho {
+        padding: 18px;
+    }
+
+    .icone-card {
+        margin-bottom: 12px;
+    }
+
+    .card-atalho p {
+        min-height: auto;
+    }
+
+    .card-atalho .seta {
+        margin-top: 10px;
+    }
+
+    .card-comunicado {
+        gap: 12px;
+        padding: 17px;
+    }
+
+    .comunicado-icone {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .comunicado-conteudo h3 {
+        font-size: 14px;
+    }
+
+    .comunicado-conteudo p {
+        font-size: 12px;
+    }
+
+    .contador {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .card-documento {
+        flex-wrap: wrap;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .documento-info {
+        flex-basis: calc(100% - 60px);
+    }
+
+    .card-documento .botao {
+        width: 100%;
+    }
+
+    .evento {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 13px;
+        padding: 16px;
+    }
+
+    .data-evento {
+        width: 52px;
+        min-width: 52px;
+        height: 62px;
+    }
+
+    .data-evento strong {
+        font-size: 23px;
+    }
+
+    .detalhes-evento {
+        flex-basis: calc(100% - 70px);
+    }
+
+    .detalhes-evento h3 {
+        font-size: 14px;
+    }
+
+    .detalhes-evento p {
+        display: flex;
+        margin-right: 0;
+    }
+
+    .status {
+        margin-left: 65px;
+    }
+
+    .grade-contatos {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .card-contato {
+        padding: 22px 16px;
+    }
+
+    .cargo {
+        min-height: auto;
+    }
+
+    .rodape {
+        padding: 26px 18px;
+    }
+}
+
+
+/* =========================================
+   14. ACESSIBILIDADE — MOVIMENTO REDUZIDO
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
