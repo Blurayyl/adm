@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Intranet interna do setor Administrativo da TechCorp.">
+    <title>TechCorp | Intranet Administrativa</title>
+
+    <!-- Arquivo externo de estilos -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Biblioteca gratuita de ícones -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal -->
+    <header class="cabecalho">
+        <div class="marca">
+            <div class="logo">
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+            <div class="marca-texto">
+                <h1>TechCorp</h1>
+                <p>Intranet — Administrativo</p>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Área do colaborador</span>
+        </div>
+    </header>
+
+    <!-- Navegação principal -->
+    <nav class="navegacao" aria-label="Menu principal">
+        <a href="#inicio" class="link-menu ativo">
+            <i class="fa-solid fa-house"></i>
+            Início
+        </a>
+
+        <a href="#documentos" class="link-menu">
+            <i class="fa-solid fa-folder-open"></i>
+            Documentos
+        </a>
+
+        <a href="#comunicados" class="link-menu">
+            <i class="fa-solid fa-bullhorn"></i>
+            Comunicados
+        </a>
+
+        <a href="#agenda" class="link-menu">
+            <i class="fa-solid fa-calendar-days"></i>
+            Agenda
+        </a>
+
+        <a href="#contatos" class="link-menu">
+            <i class="fa-solid fa-address-book"></i>
+            Contatos
+        </a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="conteudo">
+
+        <!-- Boas-vindas -->
+        <section id="inicio" class="boas-vindas">
+            <div class="boas-vindas-texto">
+                <span class="etiqueta">PORTAL CORPORATIVO</span>
+
+                <h2>Bem-vindo à intranet administrativa!</h2>
+
+                <p>
+                    Este é o espaço de comunicação e organização do
+                    setor Administrativo da TechCorp. Aqui você encontra
+                    comunicados, documentos, atividades e contatos
+                    importantes para o seu dia a dia.
+                </p>
+
+                <a href="#documentos" class="botao botao-claro">
+                    <i class="fa-solid fa-folder-open"></i>
+                    Acessar documentos
+                </a>
+            </div>
+
+            <div class="boas-vindas-icone" aria-hidden="true">
+                <i class="fa-solid fa-people-group"></i>
+            </div>
+        </section>
+
+        <!-- Atalhos rápidos -->
+        <section class="secao atalhos">
+            <div class="titulo-secao">
+                <div>
+                    <h2>Acesso rápido</h2>
+                    <p>Encontre os recursos mais utilizados.</p>
+                </div>
+            </div>
+
+            <div class="grade-atalhos">
+
+                <a href="#documentos" class="card-atalho">
+                    <div class="icone-card azul">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3>Documentos</h3>
+                    <p>Modelos e formulários administrativos.</p>
+                    <span class="seta">
+                        Acessar <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+
+                <a href="#comunicados" class="card-atalho">
+                    <div class="icone-card laranja">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3>Comunicados</h3>
+                    <p>Confira os avisos do departamento.</p>
+                    <span class="seta">
+                        Acessar <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+
+                <a href="#agenda" class="card-atalho">
+                    <div class="icone-card verde">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3>Agenda</h3>
+                    <p>Reuniões e atividades programadas.</p>
+                    <span class="seta">
+                        Acessar <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+
+                <a href="#contatos" class="card-atalho">
+                    <div class="icone-card roxo">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3>Contatos</h3>
+                    <p>Localize os responsáveis internos.</p>
+                    <span class="seta">
+                        Acessar <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Comunicados internos -->
+        <section id="comunicados" class="secao">
+            <div class="titulo-secao">
+                <div>
+                    <h2>Comunicados internos</h2>
+                    <p>Informações importantes para a equipe.</p>
+                </div>
+
+                <span class="contador">3 comunicados</span>
+            </div>
+
+            <div class="lista-comunicados">
+
+                <article class="card-comunicado">
+                    <div class="comunicado-icone azul">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <div class="comunicado-conteudo">
+                        <div class="linha-meta">
+                            <span class="categoria categoria-azul">Organização</span>
+                            <time datetime="2026-10-20">20/10/2026</time>
+                        </div>
+
+                        <h3>Atualização da agenda de reuniões</h3>
+
+                        <p>
+                            A equipe deverá consultar a agenda interna
+                            antes de agendar reuniões ou reservar salas.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card-comunicado">
+                    <div class="comunicado-icone laranja">
+                        <i class="fa-solid fa-file-circle-check"></i>
+                    </div>
+
+                    <div class="comunicado-conteudo">
+                        <div class="linha-meta">
+                            <span class="categoria categoria-laranja">Documentação</span>
+                            <time datetime="2026-10-19">19/10/2026</time>
+                        </div>
+
+                        <h3>Padronização de documentos</h3>
+
+                        <p>
+                            Os novos documentos administrativos devem
+                            utilizar os modelos disponibilizados neste portal.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card-comunicado">
+                    <div class="comunicado-icone verde">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+
+                    <div class="comunicado-conteudo">
+                        <div class="linha-meta">
+                            <span class="categoria categoria-verde">Equipe</span>
+                            <time datetime="2026-10-17">17/10/2026</time>
+                        </div>
+
+                        <h3>Reunião de alinhamento administrativo</h3>
+
+                        <p>
+                            A equipe deverá revisar as atividades em andamento
+                            e os prazos dos processos internos.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Documentos e formulários -->
+        <section id="documentos" class="secao">
+            <div class="titulo-secao">
+                <div>
+                    <h2>Documentos e formulários</h2>
+                    <p>Materiais de apoio do setor Administrativo.</p>
+                </div>
+            </div>
+
+            <div class="grade-documentos">
+
+                <article class="card-documento">
+                    <div class="documento-icone">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+
+                    <div class="documento-info">
+                        <h3>Solicitação administrativa</h3>
+                        <p>Modelo demonstrativo de solicitação interna.</p>
+                    </div>
+
+                    <a href="#aviso-documentos"
+                       class="botao botao-outline"
+                       aria-label="Consultar solicitação administrativa">
+                        Consultar
+                    </a>
+                </article>
+
+                <article class="card-documento">
+                    <div class="documento-icone">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+
+                    <div class="documento-info">
+                        <h3>Relatório de atividades</h3>
+                        <p>Estrutura de exemplo para relatórios da equipe.</p>
+                    </div>
+
+                    <a href="#aviso-documentos"
+                       class="botao botao-outline"
+                       aria-label="Consultar relatório de atividades">
+                        Consultar
+                    </a>
+                </article>
+
+                <article class="card-documento">
+                    <div class="documento-icone">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+
+                    <div class="documento-info">
+                        <h3>Checklist administrativo</h3>
+                        <p>Lista demonstrativa de tarefas recorrentes.</p>
+                    </div>
+
+                    <a href="#aviso-documentos"
+                       class="botao botao-outline"
+                       aria-label="Consultar checklist administrativo">
+                        Consultar
+                    </a>
+                </article>
+
+                <article id="aviso-documentos" class="aviso-demo">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>
+                        Estes links são demonstrativos. Os arquivos reais
+                        deverão ser adicionados ao portal posteriormente.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Agenda de atividades -->
+        <section id="agenda" class="secao">
+            <div class="titulo-secao">
+                <div>
+                    <h2>Agenda administrativa</h2>
+                    <p>Exemplo de reuniões e atividades internas.</p>
+                </div>
+            </div>
+
+            <div class="lista-agenda">
+
+                <article class="evento">
+                    <div class="data-evento">
+                        <span>OUT</span>
+                        <strong>22</strong>
+                    </div>
+
+                    <div class="detalhes-evento">
+                        <h3>Reunião de planejamento</h3>
+                        <p>
+                            <i class="fa-regular fa-clock"></i>
+                            09h00 — 10h00
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Sala de reuniões A
+                        </p>
+                    </div>
+
+                    <span class="status status-azul">Reunião</span>
+                </article>
+
+                <article class="evento">
+                    <div class="data-evento">
+                        <span>OUT</span>
+                        <strong>24</strong>
+                    </div>
+
+                    <div class="detalhes-evento">
+                        <h3>Revisão de documentos</h3>
+                        <p>
+                            <i class="fa-regular fa-clock"></i>
+                            14h00 — 15h30
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Departamento Administrativo
+                        </p>
+                    </div>
+
+                    <span class="status status-verde">Atividade</span>
+                </article>
+
+                <article class="evento">
+                    <div class="data-evento">
+                        <span>OUT</span>
+                        <strong>27</strong>
+                    </div>
+
+                    <div class="detalhes-evento">
+                        <h3>Alinhamento entre departamentos</h3>
+                        <p>
+                            <i class="fa-regular fa-clock"></i>
+                            10h00 — 11h00
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Sala de reuniões B
+                        </p>
+                    </div>
+
+                    <span class="status status-laranja">Integração</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contatos internos fictícios -->
+        <section id="contatos" class="secao">
+            <div class="titulo-secao">
+                <div>
+                    <h2>Contatos internos</h2>
+                    <p>Equipe fictícia de referência do setor.</p>
+                </div>
+            </div>
+
+            <div class="grade-contatos">
+
+                <article class="card-contato">
+                    <div class="avatar avatar-azul">MC</div>
+                    <h3>Mariana Costa</h3>
+                    <p class="cargo">Coordenadora Administrativa</p>
+                    <p class="ramal">
+                        <i class="fa-solid fa-phone"></i>
+                        Ramal fictício: 2101
+                    </p>
+                </article>
+
+                <article class="card-contato">
+                    <div class="avatar avatar-verde">RA</div>
+                    <h3>Rafael Almeida</h3>
+                    <p class="cargo">Assistente Administrativo</p>
+                    <p class="ramal">
+                        <i class="fa-solid fa-phone"></i>
+                        Ramal fictício: 2102
+                    </p>
+                </article>
+
+                <article class="card-contato">
+                    <div class="avatar avatar-roxo">JS</div>
+                    <h3>Juliana Santos</h3>
+                    <p class="cargo">Analista de Processos</p>
+                    <p class="ramal">
+                        <i class="fa-solid fa-phone"></i>
+                        Ramal fictício: 2103
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape-marca">
+            <i class="fa-solid fa-building"></i>
+            <strong>TechCorp</strong>
+        </div>
+
+        <p>Portal interno — Setor Administrativo</p>
+
+        <p class="rodape-copyright">
+            &copy; 2026 TechCorp. Ambiente demonstrativo.
+        </p>
+    </footer>
+
+</body>
+</html>
